@@ -56,7 +56,7 @@
         <div class="app-grid">
           <article class="app-card">
             <div class="app-icon">W</div>
-            <h3>TZ Weight</h3>
+            <h3>체중 기록 - TZ Weight</h3>
             <p>빠르게 체중을 기록하고 변화 흐름을 확인하는 체중 관리 앱입니다.</p>
             <span class="status">준비 중</span>
           </article>
@@ -80,7 +80,7 @@
       <section id="about" class="section split-section">
         <div>
           <p class="eyebrow">About</p>
-          <h2>작게 만들고 직접 운영합니다.</h2>
+          <h2>일상을 개발합니다. </h2>
         </div>
         <p>
           타조코드는 1인 개발 구조에 맞춰 단순하고 유지보수 가능한 서비스를 지향합니다.
