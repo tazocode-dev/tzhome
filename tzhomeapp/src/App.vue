@@ -56,7 +56,7 @@
         <div class="app-grid">
           <article class="app-card">
             <div class="app-icon">W</div>
-            <h3>체중 기록 - TZ Weight</h3>
+            <h3>TZ Weight</h3>
             <p>빠르게 체중을 기록하고 변화 흐름을 확인하는 체중 관리 앱입니다.</p>
             <span class="status">준비 중</span>
           </article>
