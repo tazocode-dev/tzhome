@@ -19,24 +19,62 @@
     <main>
       <section id="home" class="hero section">
         <div>
-          <p class="eyebrow">Personal App Studio</p>
+          <p class="eyebrow">App Download</p>
 
-          <h1>TAZOCODE</h1>
+          <div class="hero-app-card">
+            <div class="app-main">
+              <div class="app-icon app-image-icon hero-app-icon">
+                <img src="/tzweight-icon.png" alt="TZWeight 앱 아이콘" />
+              </div>
 
-          <h2>일상을 개발합니다.</h2>
+              <div class="app-title-box">
+                <h1>TZWeight</h1>
+                <p>체중기록</p>
+              </div>
+            </div>
 
-          <p class="hero-text">
-            TAZOCODE는 웹 서비스, 모바일 앱, 서버 운영까지<br />
-            관리하는 개발 브랜드입니다.
-          </p>
+            <p class="hero-text">
+              빠르게 체중을 기록하고 변화 흐름을 확인하는 체중 관리 앱입니다.
+            </p>
+
+            <div class="store-links hero-store-links">
+              <a
+                class="store-button"
+                href="https://play.google.com/store/apps/details?id=com.tazocode.tzweight"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TZWeight Google Play 이동"
+              >
+                <span>GET IT ON</span>
+                <strong>Google Play</strong>
+              </a>
+
+              <a
+                class="store-button"
+                href="https://apps.apple.com/kr/app/id6780086710"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TZWeight App Store 이동"
+              >
+                <span>Download on the</span>
+                <strong>App Store</strong>
+              </a>
+            </div>
+          </div>
 
           <div class="hero-actions">
-            <a class="primary-button" href="#apps">앱 보기</a>
+            <a class="secondary-button" href="#apps">다른 앱 보기</a>
             <a class="secondary-button" href="/privacy.html">개인정보처리방침</a>
           </div>
         </div>
 
         <div class="hero-card">
+          <p class="eyebrow">Personal App Studio</p>
+          <h2>TAZOCODE</h2>
+          <p class="hero-text">
+            TAZOCODE는 웹 서비스, 모바일 앱, 서버 운영까지 관리하는 개발 브랜드입니다.
+          </p>
+
           <div class="card-row">
             <span>Web</span>
             <strong>Vue / Node.js</strong>
@@ -61,9 +99,43 @@
 
         <div class="app-grid">
           <article class="app-card">
-            <div class="app-icon">W</div>
-            <h3>TZ Weight</h3>
-            <p>빠르게 체중을 기록하고 변화 흐름을 확인하는 체중 관리 앱입니다.</p>
+            <div class="app-main">
+              <div class="app-icon app-image-icon">
+                <img src="/tzweight-icon.png" alt="TZWeight 앱 아이콘" />
+              </div>
+
+              <div class="app-title-box">
+                <h3>TZWeight</h3>
+                <p>체중기록</p>
+              </div>
+            </div>
+
+            <p class="app-description">
+              빠르게 체중을 기록하고 변화 흐름을 확인하는 체중 관리 앱입니다.
+            </p>
+
+            <div class="store-links">
+              <a
+                class="store-button"
+                href="https://play.google.com/store/apps/details?id=com.tazocode.tzweight"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>GET IT ON</span>
+                <strong>Google Play</strong>
+              </a>
+
+              <a
+                class="store-button"
+                href="https://apps.apple.com/kr/app/id6780086710"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Download on the</span>
+                <strong>App Store</strong>
+              </a>
+            </div>
+
             <span class="status">운영 중</span>
           </article>
 
@@ -89,7 +161,7 @@
           <h2>개발 과정과 일상을 공유합니다.</h2>
           <p>
             앱을 만들고, 사용하고, 새로운 서비스를 실험합니다.<br />
-            TAZOCODE의 과정은 유튜브, 인스타그램, 쓰레드에서 <br/>
+            TAZOCODE의 과정은 유튜브, 인스타그램, 쓰레드에서 <br />
             함께 볼 수 있습니다.
           </p>
         </div>
@@ -269,10 +341,10 @@ p {
 }
 
 h1 {
-  margin-bottom: 12px;
+  margin-bottom: 0;
 
   color: #111827;
-  font-size: clamp(38px, 11vw, 56px);
+  font-size: clamp(36px, 10vw, 54px);
   line-height: 1.02;
   letter-spacing: -0.07em;
 }
@@ -307,11 +379,20 @@ h3 {
   line-height: 1.85;
 }
 
+.hero-app-card {
+  padding: 24px;
+
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #e5e7eb;
+  border-radius: 28px;
+  box-shadow: 0 24px 52px rgba(15, 23, 42, 0.1);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 18px;
 }
 
 .primary-button,
@@ -365,8 +446,8 @@ h3 {
   border-bottom: 1px solid #eef2f7;
 }
 
-.card-row:first-child {
-  padding-top: 0;
+.card-row:first-of-type {
+  margin-top: 20px;
 }
 
 .card-row:last-child {
@@ -399,6 +480,39 @@ h3 {
   padding: 24px;
 }
 
+.app-main {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+.app-title-box {
+  min-width: 0;
+}
+
+.app-title-box h3 {
+  margin-bottom: 6px;
+
+  font-size: 25px;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+}
+
+.app-title-box p {
+  margin: 0;
+
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.app-description {
+  margin-bottom: 0;
+}
+
 .app-icon,
 .social-icon {
   display: inline-flex;
@@ -419,6 +533,88 @@ h3 {
 
 .app-icon {
   margin-bottom: 20px;
+}
+
+.app-image-icon {
+  flex: 0 0 94px;
+
+  width: 94px;
+  height: 94px;
+  margin-bottom: 0;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+}
+
+.hero-app-icon {
+  flex-basis: 104px;
+  width: 104px;
+  height: 104px;
+  border-radius: 28px;
+}
+
+.app-image-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+.hero-store-links {
+  margin-top: 24px;
+}
+
+.store-button {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-width: 124px;
+  min-height: 50px;
+  padding: 7px 14px;
+
+  color: #ffffff;
+  background: #111827;
+  border-radius: 15px;
+
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.16);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.store-button:hover {
+  transform: translateY(-2px);
+  background: #020617;
+  box-shadow: 0 14px 26px rgba(17, 24, 39, 0.22);
+}
+
+.store-button span {
+  margin-bottom: 2px;
+
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  opacity: 0.72;
+}
+
+.store-button strong {
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.1;
 }
 
 .social-icon {
@@ -549,6 +745,39 @@ h3 {
   text-decoration: none;
 }
 
+@media (max-width: 420px) {
+  .app-main {
+    gap: 14px;
+  }
+
+  .app-image-icon {
+    flex-basis: 82px;
+    width: 82px;
+    height: 82px;
+    border-radius: 22px;
+  }
+
+  .hero-app-icon {
+    flex-basis: 92px;
+    width: 92px;
+    height: 92px;
+    border-radius: 24px;
+  }
+
+  .app-title-box h3 {
+    font-size: 23px;
+  }
+
+  .store-links {
+    width: 100%;
+  }
+
+  .store-button {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .site {
     max-width: 1080px;
@@ -572,7 +801,7 @@ h3 {
   }
 
   .hero {
-    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
     align-items: center;
   }
 
